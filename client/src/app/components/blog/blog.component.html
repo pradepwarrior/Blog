@@ -23,7 +23,7 @@
     'has-error': form.controls.title.dirty && form.controls.title.errors}">
       <input type="text" name="title" class="form-control" autocomplete="off" placeholder="Title" formControlName="title">
       <ul class="help-block">
-        <li *ngIf="form.controls.title.dirty && form.controls.title.errors?.required">This field required</li>
+        <li *ngIf="form.controls.title.dirty && form.controls.title.errors?.required">This field is required</li>
         <li *ngIf="(form.controls.title.dirty && form.controls.title.errors?.minlength) ||
         (form.controls.title.dirty && form.controls.title.errors?.maxlength)">
           Max length 50 & Min length 5</li>

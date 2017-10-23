@@ -72,11 +72,11 @@
       <strong>Posted by: </strong>{{blog.createdBy}}
       <br>
       <strong>Date: </strong>{{blog.createAt | date: 'MMM dd, yyyy'}}
-      <div *ngIf="username === blog.createdBy">
+      <!-- <div *ngIf="username === blog.createdBy">
         <strong>Likes:</strong>{{blog.likes}}
         <br>
         <strong>Dislikes:</strong>{{blog.dislikes}}
-      </div>
+      </div> -->
 
       <a [routerLink]="['/edit-blog/', blog._id]" *ngIf="username === blog.createdBy">
         <button type="button" name="button" class="btn btn-sm btn-info">Edit</button>
@@ -85,7 +85,7 @@
         <button type="button" name="button" class="btn btn-sm btn-danger">Delete</button>
       </a>
 
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <button type="button" class="btn btn-sm btn-success" *ngIf="username !== blog.createdBy">
           <span class="glyphicon glyphicon-thumbs-up">&nbsp;</span>Likes:21
         </button>
@@ -95,7 +95,7 @@
           <a href="#">asdfsbcd</a>
         </div>
       </div>
-      <!-- Dislike -->
+      
       <div class="dropdown">
         <button type="button" class="btn btn-sm btn-danger" *ngIf="username !== blog.createdBy">
           <span class="glyphicon glyphicon-thumbs-up">&nbsp;</span>Dislike:21
@@ -105,14 +105,14 @@
           <a href="#">abcsdfd</a>
           <a href="#">asdfsbcd</a>
         </div>
-      </div>
+      </div> -->
     </div>
-
+<!-- 
     <ul class="list-group">
       <li class="list-group-item">
         <button type="button" class="btn btn-sm btn-danger" (click)="drftComment()">Post Comment</button>
 
-        <br />
+        <br /> -->
         <!-- <form>
           
           <textarea name="name" rows="10" cols="30" class="form-control"> </textarea>
@@ -120,8 +120,8 @@
         <button type="button" name="button" class="btn btn-sm btn-danger">Cancel</button>
         
         </form> -->
-      </li>
-    </ul>
+      <!-- </li>
+    </ul> -->
 
   </div>
 </div>

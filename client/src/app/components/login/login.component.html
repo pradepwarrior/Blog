@@ -11,7 +11,7 @@
   <div class="form-group">
     <label for="username">Username</label>
     <div [ngClass]="{'has-error':form.controls.username.errors && form.controls.username.dirty,
-       'has-success':(!form.controls.username.errors && usernameValid)}">
+       'has-success':(!form.controls.username.errors )}">
       <input class="form-control" placeholder="Username" formControlName="username">
       <ul class="help-block">
         <li *ngIf="form.controls.username.errors?.required && form.controls.username.dirty">

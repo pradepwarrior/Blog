@@ -30,13 +30,13 @@ export class BlogComponent implements OnInit {
     this.form = this.formBuilder.group({
       title:['',Validators.compose([
         Validators.required,
-        Validators.maxLength(50),
+        Validators.maxLength(50000000000),
         Validators.minLength(5),
  
       ])],
      body:['',Validators.compose([
         Validators.required,
-        Validators.maxLength(500),
+        Validators.maxLength(500000000000000000000),
         Validators.minLength(5)
       ])]
     })

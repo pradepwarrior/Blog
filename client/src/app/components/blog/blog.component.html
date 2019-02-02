@@ -26,7 +26,7 @@
         <li *ngIf="form.controls.title.dirty && form.controls.title.errors?.required">This field is required</li>
         <li *ngIf="(form.controls.title.dirty && form.controls.title.errors?.minlength) ||
         (form.controls.title.dirty && form.controls.title.errors?.maxlength)">
-          Max length 50 & Min length 5</li>
+          Max length 50000000000 & Min length 5</li>
       </ul>
     </div>
   </div>
@@ -41,7 +41,7 @@
         <li *ngIf="form.controls.body.dirty && form.controls.body.errors?.required">This field required</li>
         <li *ngIf="(form.controls.body.dirty && form.controls.body.errors?.minlength) ||
             (form.controls.body.dirty && form.controls.body.errors?.maxlength)">
-          Max length 500 & Min length 5</li>
+          Max length 500000000000000000000 & Min length 5</li>
       </ul>
     </div>
   </div>
@@ -66,7 +66,7 @@
       </h3>
     </div>
     <div class="panel-body">
-      {{blog.body}}
+      <pre>{{blog.body}}</pre>
     </div>
     <div class="panel-footer">
       <strong>Posted by: </strong>{{blog.createdBy}}

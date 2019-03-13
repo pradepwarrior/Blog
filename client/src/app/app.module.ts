@@ -21,7 +21,7 @@ import { NotAuthGuard } from './guards/notAuth.guard';
 import { BlogComponent } from './components/blog/blog.component';
 import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.component';
 import { DeleteBlogComponent } from './components/blog/delete-blog/delete-blog.component';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter'
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +41,8 @@ import { DeleteBlogComponent } from './components/blog/delete-blog/delete-blog.c
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    FlashMessagesModule
+    FlashMessagesModule,
+    Ng2SearchPipeModule
   ],
   providers: [AuthService, AuthGuard, NotAuthGuard,BlogService],
   bootstrap: [AppComponent]

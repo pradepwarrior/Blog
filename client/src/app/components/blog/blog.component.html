@@ -59,7 +59,9 @@
 
 
 <div *ngIf="!newPost">
-  <div class="panel panel-primary" *ngFor="let blog of blogPosts">
+    <input type="text"  class="form-control" placeholder="Search"[(ngModel)]="term">
+    <br>
+  <div class="panel panel-primary" *ngFor="let blog of blogPosts |filter:term">
     <div class="panel-heading">
       <h3 class="panel-title">
         {{blog.title}}
